@@ -24,7 +24,7 @@ class PigLatinizer
       # modified_word = 
   else
     
-    modified_word = each_word.gsub!("#{store_match}", "").concat("#{store_match}" + "ay")
+    modified_word = each_word.sub!("#{store_match}", "").concat("#{store_match}" + "ay")
 
   end
   modified_array << modified_word
