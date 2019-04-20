@@ -15,7 +15,7 @@ class PigLatinizer
   modify_string = user_entry.split(" ")
   
   modify_string.each do |each_word|
-    store_match = each_word.match(/\b[bcdfghjklmnpqrstvwxyz]+/).to_s
+    store_match = each_word.match(/\b[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]+/).to_s
 
     if each_word.start_with?(/\b[aeiouAEIOU]/)
 
